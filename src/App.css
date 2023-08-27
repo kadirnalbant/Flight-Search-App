@@ -1,38 +1,136 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
 .App {
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #bc2525;
+}
+
+
+.UserAuth {
+  margin-bottom: 20px;
+}
+
+.UserAuth label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.UserAuth input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.FlightSearchForm {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.FlightSearchForm h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.FlightSearchForm label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.FlightSearchForm input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.FlightSearchForm ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.FlightSearchForm li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.FlightSearchForm li:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.FlightSearchForm button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.FlightSearchForm button:hover {
+  background-color: #555;
+}
+
+/* FlightResults bileşeni stilleri */
+.FlightResults {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.FlightResults h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.FlightResults table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.FlightResults th, .FlightResults td {
+  padding: 10px;
+  border: 1px solid #ccc;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.FlightResults th {
+  background-color: #f0f0f0;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.FlightResults tbody tr:nth-child(even) {
+  background-color: #f0f0f0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Loading {
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Error {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
 }
